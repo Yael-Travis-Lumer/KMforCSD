@@ -1,0 +1,18 @@
+Package: KMforCSD
+Type: Package
+Title: Kernel Machine Regression for Current Status Data
+Version: 0.1.0
+Depends:
+    R (>= 3.6)
+Imports:
+    kernlab,
+    ks,
+    stats
+Authors@R: person("Yael", "Travis-Lumer", email = "yael.travis@gmail.com", role = c("aut", "cre"))
+Description: This package implements kernel machine regression based on a modification
+    of the quadratic loss, as described in \href{https://arxiv.org/abs/1505.00991}{Kernel Machines for Current Starus Data}.
+    The main function trains a kernel machine, and then uses it to predict the conditional expectation of the unobservable failure time.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
