@@ -8,10 +8,10 @@ The package also contains the artificially censored data from Section 6.2.
 ```{r}
 n=500 #size of dataset
 data_list = weibull_data(n=500)
-data = data_list[[1]]
+sim_data = data_list[[1]]
 train_ind = sample(seq_len(n), size = 0.8*n)
-train_data = data[train_ind, ]
-test_data = data[-train_ind, ]
+train_data = sim_data[train_ind, ]
+test_data = sim_data[-train_ind, ]
 ```
 2. Train the KM-CSD:
 ```{r}
