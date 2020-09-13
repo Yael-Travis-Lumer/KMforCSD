@@ -81,7 +81,7 @@ KMforCSD <- function(data,cost=1,kernel="rbfdot",gamma=1,scale=1,offset=1,degree
 #' sol <- KMforCSD(data=d[[1]]) #training
 #' d_test <- exp_data(n=50) #test set
 #' new_data <- predict(sol,d_test[[1]]) #prediction
-#' decision_function <- new_data$prediction
+#' decision_function <- new_data$response
 #' @export
 predict.KMforCSD <- function(object,newdata,...){
   n_new <- nrow(newdata)
