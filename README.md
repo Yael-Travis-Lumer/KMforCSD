@@ -20,6 +20,6 @@ sol = KMforCSD(train_data)
 3. Predicted values on test set:
 ```{r}
 pred = predict(sol, test_data) #prediction
-decision_function = pred$prediction #estimated conditional expectation
+decision_function = pred$response #estimated conditional expectation
 ```
 
