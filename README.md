@@ -6,6 +6,7 @@ The package also contains the artificially censored data from Section 6.2.
 ## Example
 1. Generate simulated current status data from weibull distribution (Setting 2 in paper):
 ```{r}
+library(KMforCSD)
 n=500 #size of dataset
 data_list = weibull_data(n=500)
 sim_data = data_list[[1]]
