@@ -1,7 +1,18 @@
 # KMforCSD
 
-R packgae KMforCSD containing the algorithm and the simulated data examples from the paper Kernel Machines for Current Status Data. 
+KMforCSD is an R package containing the algorithm and the simulated data examples from the paper Kernel Machines for Current Status Data. 
 The package also contains the artificially censored data from Section 6.2.
+
+## Installation
+You can install the package from its [GitHub repository](https://github.com/Yael-Travis-Lumer/KMforCSD/). You first need to install the [devtools](https://github.com/r-lib/devtools) package.
+```{r}
+install.packages("devtools")
+```
+Then install KMforCSD using the `install_github` function in the [devtools](https://github.com/r-lib/devtools) package.
+```{r}
+library(devtools)
+install_github("Yael-Travis-Lumer/KMforCSD")
+```
 
 ## Example
 1. Generate simulated current status data from weibull distribution (Setting 2 in paper):
