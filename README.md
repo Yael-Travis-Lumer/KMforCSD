@@ -35,4 +35,3 @@ pred = predict(sol, test_data) #prediction
 decision_function = pred$response #estimated conditional expectation
 ```
 
-A line I wrote on my local computer
